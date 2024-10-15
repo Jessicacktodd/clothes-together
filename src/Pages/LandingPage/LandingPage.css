@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+.clothes-together-logo {
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30%;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.navbar {
+    margin-left: auto;
+}

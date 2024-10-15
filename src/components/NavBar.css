@@ -1,0 +1,33 @@
+#navbar-div-container nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px 20px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+button:hover {
+    color: #71859a;
+}
+
+button:active {
+    color: #71859a; 
+}
