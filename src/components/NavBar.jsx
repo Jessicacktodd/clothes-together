@@ -21,7 +21,6 @@ export const NavBar = () => {
                 
                 <div className="right-side-links">
                     <nav>
-                        {/* <button onClick={() => navigate("/WhoWeAre")}>Who we are</button> */}
                         <button onClick={() => navigate("/FindOutMoreBrands")}>Find out more (Brands)</button>
                         <button onClick={() => navigate("/FindOutMoreCharities")}>Find out more (Charities)</button>
                     </nav>
@@ -29,12 +28,15 @@ export const NavBar = () => {
             </header>
            
             <div className="header-section">
-                <img src={clothes_together_logo} alt="clothes together logo" className="clothes-together-logo"></img>
+                <a href="/">
+                    <img src={clothes_together_logo} alt="clothes together logo" className="clothes-together-logo"></img></a>
                 
                 <nav className="spread-out-links">
-                    <a href="/WhoWeAre">Who we are</a>
-                    <a href="/FindOutMoreBrands">Find out more (Brands)</a>
-                    <a href="/FindOutMoreCharities">Find out more (Charities)</a>
+                        <a href="/WhoWeAre">Who we are</a>
+                        <a href="/WhatWeDo">What we do</a>
+                        <a href="/FindOutMoreBrands">Partner brands</a>
+                        <a href="/FindOutMoreCharities">Partner charities</a>
+                        <a href="/Press">Press</a>
                 </nav>
             </div>
            

@@ -1,7 +1,9 @@
-import "./WhoWeAre.css"
+import { NavBar } from "../../components/NavBar";
 
 export const WhoWeAre = () => {
-    return (
-        <div>Hello</div>
+    return(
+        <div className="WhoWeAre">
+            <NavBar />
+        </div>
     )
 }

@@ -1,8 +1,8 @@
 import { NavBar } from "../../components/NavBar";
 
-export const Press = () => {
+export const WhatWeDo = () => {
     return(
-        <div className="Press">
+        <div className="whatWeDo">
             <NavBar />
         </div>
     )

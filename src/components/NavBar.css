@@ -1,11 +1,8 @@
 #navbar-div-container nav{
     display: flex;
     justify-content: flex-end;
-    padding: 10px 55px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 2%;
+    padding: 10px 50px;
+    margin-top: 1%;
 }
 
 .header {
@@ -14,7 +11,6 @@
     align-items: center;
     position: relative;
     width: 100%;
-    margin-top: 0%;
 }
 
 .header-section {
@@ -22,17 +18,23 @@
     flex-direction: column;
     align-items: center;
     background-color: transparent;
+    width: 100%;
 }
 
+a {
+    text-decoration: none;
+    display: block; 
+}
 
 .clothes-together-logo {
-    width: 15%;
-    margin-top: 0%;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
 }
 
 .social-links {
     margin-left: 2%;
-    margin-top: 2%;
+    margin-top: 1%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -45,25 +47,26 @@
     cursor: pointer;
 }
 
-
 .spread-out-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-self: center;
     width: 100%;
     max-width: 1200px;
     padding: 10px 0;
-    color: black; 
 }
 
 .spread-out-links a {
     color: black;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     transition: color 0.3s ease;
+    flex: 1;
+    text-align: center;
 }
 
 .spread-out-links a:hover {
-    color: #007bff;
+    color: rgb(255, 125, 64);
 }
 
 nav {
@@ -83,9 +86,9 @@ button {
 }
 
 button:hover {
-    color: #bd8833;
+    color: rgb(255, 125, 64)
 }
 
 button:active {
-    color: #bd8833; 
+    color: rgb(255, 125, 64); 
 }
