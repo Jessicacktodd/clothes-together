@@ -1,63 +1,14 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    margin-top: 0%;
-}
-
-.header-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
-.clothes-together-logo {
-    width: 22%;
-    margin-top: 0%;
-}
-
-.social-links {
-    margin-left: 2%;
-    margin-top: 2%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.social-icon {
-    width: 30px;
-    height: auto;
-    cursor: pointer;
-}
 
 .navbar {
     margin-left: auto;
 }
 
-.spread-out-links {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 1200px;
-    padding: 10px 0;
-    color: black; 
-}
-
-.spread-out-links a {
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.spread-out-links a:hover {
-    color: #007bff;
-}
 
 .Nile-blue-section {
     background-color: rgba(69, 181, 170, 0.5);;
