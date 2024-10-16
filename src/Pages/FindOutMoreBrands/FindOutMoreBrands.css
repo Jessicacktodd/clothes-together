@@ -1,0 +1,68 @@
+.partners h2 {
+    font-size: 26px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.first-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 2rem;
+    margin-bottom: 40px;
+    justify-items: center;
+    margin-left: 30px;
+
+}
+
+
+.second-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 2rem;
+    justify-items: center;
+    padding: 20px 20px;
+}
+
+.brand-logos img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.brand-logos img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
+}
+
+.gooseberry-fool-logo {
+    grid-column: 1 / 2;
+}
+
+.ILO-logo {
+    grid-column: 2 / 3;
+}
+
+.kite-logo {
+    grid-column: 3 / 4;
+}
+
+.little-green-radicals-logo {
+    grid-column: 4 / 5;
+}
+
+.toby-tiger-logo {
+    grid-column: 2 / 3;
+}
+
+.piccalilly-logo {
+    grid-column: 3 / 4;
+}
+
+.pigeon-logo {
+    grid-column: 4 / 5;
+}

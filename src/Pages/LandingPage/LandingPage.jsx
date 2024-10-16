@@ -29,6 +29,15 @@ export const LandingPage = () => {
                 <a href="/FindOutMoreCharities">
                     <img src={orange_link_image} alt="orange link image" className="orange-link-image"></img></a>
             </section>
+        <div>
+        <section className="Nile-blue-section-two">
+            <section className="misc-links">
+                <p>Contact Us</p>
+                <p>T&Cs</p>
+                <p>Legal</p>
+            </section>
+        </section>
+        </div>
         </div>
         </>
     )};
