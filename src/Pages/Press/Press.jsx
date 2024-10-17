@@ -1,6 +1,6 @@
-import { Footer } from "../../components/Footer";
-import { LinkImages } from "../../components/LinkImages";
-import { NavBar } from "../../components/NavBar";
+import { Footer } from "../../components/CompanyInfoBanner/Footer";
+import { LinkImages } from "../../components/LinkImages/LinkImages";
+import { NavBar } from "../../components/NavBar/NavBar";
 import "./Press.css"
 
 export const Press = () => {

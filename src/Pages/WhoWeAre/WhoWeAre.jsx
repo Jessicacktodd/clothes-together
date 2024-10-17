@@ -1,8 +1,8 @@
-import { NavBar } from "../../components/NavBar";
+import { NavBar } from "../../components/NavBar/NavBar";
 import "./WhoWeAre.css"
 import Who_we_are_image from "../../assets/Who_we_are_photo.png"
-import { LinkImages } from "../../components/LinkImages";
-import { Footer } from "../../components/Footer";
+import { LinkImages } from "../../components/LinkImages/LinkImages";
+import { Footer } from "../../components/CompanyInfoBanner/Footer";
 
 export const WhoWeAre = () => {
     return(

@@ -1,6 +1,6 @@
-import mustard_link_image from "../assets/mustard_link_image.png";
-import green_link_image from "../assets/green_link_image.png";
-import orange_link_image from "../assets/orange_link_image.png";
+import mustard_link_image from "../../assets/mustard_link_image.png";
+import green_link_image from "../../assets/green_link_image.png";
+import orange_link_image from "../../assets/orange_link_image.png";
 import "./LinkImages.css";
 
 export const LinkImages = () => {

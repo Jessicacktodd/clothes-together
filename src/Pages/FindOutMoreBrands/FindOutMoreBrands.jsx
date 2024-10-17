@@ -1,4 +1,4 @@
-import { NavBar } from "../../components/NavBar";
+import { NavBar } from "../../components/NavBar/NavBar";
 import "./FindOutMoreBrands.css" 
 import gooseberry_fool_logo from "../../assets/gooseberry_fool_logo.png";
 import kite_logo from "../../assets/kite_logo.png";
@@ -7,8 +7,8 @@ import little_green_radicals_logo from "../../assets/little_green_radicals_logo.
 import piccalilly_logo from "../../assets/piccalilly_logo.png";
 import pigeon_logo from "../../assets/pigeon_logo.png";
 import toby_tiger_logo from "../../assets/toby_tiger_logo.png";
-import { LinkImages } from "../../components/LinkImages";
-import { Footer } from "../../components/Footer";
+import { LinkImages } from "../../components/LinkImages/LinkImages";
+import { Footer } from "../../components/CompanyInfoBanner/Footer";
 
 export const FindOutMoreBrands = () => {
     return(

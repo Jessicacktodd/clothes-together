@@ -1,8 +1,8 @@
-import { NavBar } from "../../components/NavBar";
+import { NavBar } from "../../components/NavBar/NavBar";
 import "./WhatWeDo.css"
 import what_we_do_image from "./../../assets/what_we_do_image.png"
-import { LinkImages } from "../../components/LinkImages";
-import { Footer } from "../../components/Footer";
+import { LinkImages } from "../../components/LinkImages/LinkImages";
+import { Footer } from "../../components/CompanyInfoBanner/Footer";
 
 export const WhatWeDo = () => {
     return(

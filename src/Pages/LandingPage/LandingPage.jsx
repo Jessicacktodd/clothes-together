@@ -1,9 +1,9 @@
-import { NavBar } from "../../components/NavBar";
+import { NavBar } from "../../components/NavBar/NavBar";
+import { Footer } from "../../components/CompanyInfoBanner/Footer";
 
 import moock_photo from "../../assets/mock_photo.png";
-import { LinkImages } from "../../components/LinkImages";
+import { LinkImages } from "../../components/LinkImages/LinkImages";
 import "./LandingPage.css"
-// import { Footer } from "../../components/Footer";
 
 
 export const LandingPage = () => {

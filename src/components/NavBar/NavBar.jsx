@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import "./NavBar.css"
-import  clothes_together_logo  from "../assets/clothes_together_logo.png";
-import instagram_logo from "../assets/instagram_logo.png";
-import facebook_logo from "../assets/facebook_logo.png"
-import mail_icon from "../assets/mail_icon.png"
+import  clothes_together_logo  from "../../assets/clothes_together_logo.png";
+import instagram_logo from "../../assets/instagram_logo.png";
+import facebook_logo from "../../assets/facebook_logo.png"
+import mail_icon from "../../assets/mail_icon.png"
 
 export const NavBar = () => {
     const navigate = useNavigate();
