@@ -12,6 +12,9 @@ export const LandingPage = () => {
         <div className="landingPage">
             <NavBar />
             <section className="Nile-blue-section">
+            <section className="quote">
+                    <p>Reducing clothing waste....tackling clothing insecurity</p>
+                </section>
                 <img src={moock_photo} alt="mock photo" className="section-image"></img>
                 <div className="text-block">
                     <p>From the moment a baby is born, their life chances are largely determined by the postcode and the income of their parents. According to the Joseph Rowntree foundation, 30% of children in the UK live in poverty.<br></br>
@@ -22,12 +25,24 @@ export const LandingPage = () => {
             
             </section>
             <section className="link-images">
-                <a href="/WhoWeAre">
-                    <img src={mustard_link_image} alt="mustard link image" className="mustard-link-image"></img></a>
-                <a href="/FindOutMoreBrands">
-                    <img src={green_link_image} alt="green link image" className="green-link-image"></img></a>
-                <a href="/FindOutMoreCharities">
-                    <img src={orange_link_image} alt="orange link image" className="orange-link-image"></img></a>
+                <div className="link-item">
+                    <a href="/WhoWeAre">
+                        <img src={mustard_link_image} alt="mustard link image" className="mustard-link-image"></img>
+                    </a>
+                    <p className="link-description">Who We Are</p>
+                </div>
+                <div className="link-item">
+                    <a href="/FindOutMoreBrands">
+                        <img src={green_link_image} alt="green link image" className="green-link-image"></img>
+                    </a>
+                    <p className="link-description">Find Out More Brands</p>
+                 </div>
+                 <div className="link-item">
+                    <a href="/FindOutMoreCharities">
+                        <img src={orange_link_image} alt="orange link image" className="orange-link-image"></img>
+                    </a>
+                    <p className="link-description">Find Out More Charities</p>
+                </div>
             </section>
         <div>
         <section className="Nile-blue-section-two">

@@ -13,8 +13,13 @@ export const FindOutMoreBrands = () => {
         <div className="FindOutMoreBrands">
             <NavBar />
             <section className="form"></section>
+            <section className="Brands-blue-section">
                 <section className="partners">
-                    <h2>Founding Partners</h2>
+                    <section className="brand-heading">
+                        <p>Partner brands</p>
+                    </section>
+                    <p>These brands are committed to ensuring that every piece of spare stock reaches people who need it</p>
+                    <h4>Founding Partners</h4>
                     <section className="brand-logos">
                         <div className="first-row">
                             <a href="https://www.gooseberryfool.co.uk/">
@@ -36,7 +41,7 @@ export const FindOutMoreBrands = () => {
                                 <img src={pigeon_logo} alt="Pigeon logo" className="pigeon-logo"></img></a>
                         </div>
                     </section>
-
+                    </section>
             </section>
         </div>
     )

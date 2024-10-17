@@ -8,16 +8,23 @@ html, body {
 }
 
 .Nile-blue-section {
-    background-color: rgba(69, 181, 170, 0.5);;
-    padding: 50px 0;
+    background-color: rgba(69, 181, 170, 0.5);
+    padding: 15px 0;
     color: black;
     position: relative;
     width: 100%;
-    height: 50%;
-    z-index: -1;
+    height: auto;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.quote {
+    text-align: center;
+    font-size: 27px;
+    color: rgb(255, 125, 64);
+    margin: 15px auto;
 }
 
 .section-image {
@@ -47,16 +54,27 @@ html, body {
     padding: 10px ;
 }
 
+.link-item {
+    text-align: center;
+    width: 30%;
+}
+
 .mustard-link-image, .green-link-image, .orange-link-image {
     width: 100%;
     height: auto;
     cursor: pointer;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 5px;
+}
+
+.link-description {
+    font-size: 14px;
+    margin-top: 1px;
+
 }
 
 .Nile-blue-section-two {
-    background-color: rgba(69, 181, 170, 0.5);;
+    background-color: rgba(69, 181, 170, 0.5);
     padding: 10px 0;
     color: black;
     position: relative;

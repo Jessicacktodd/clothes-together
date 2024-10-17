@@ -1,13 +1,17 @@
 import { NavBar } from "../../components/NavBar";
 import "./WhoWeAre.css"
-import Jane_and_kate from "../../assets/Jane_and_Kate.png"
+import Who_we_are_image from "../../assets/Who_we_are_photo.png"
 
 export const WhoWeAre = () => {
     return(
         <div className="WhoWeAre">
             <NavBar />
-            <section className="jane-kate-image">
-                    <img src={ Jane_and_kate } alt="Jane and Kate" />
+            <section className="Who-we-are-blue-section">
+            <section className="Who-we-are-heading">
+                        <p>Who we are</p>
+                    </section>
+            <section className="Who-we-are-image">
+                    <img src={ Who_we_are_image } alt="Who we are image" />
                 </section>
             <section className="mock-text">
                 <p>Ethical childrenswear brand, Pigeon Organics, has been donating spare stock to charities and community groups for several years: 
@@ -25,9 +29,10 @@ export const WhoWeAre = () => {
                 
                 <p>Image and paragraph: Kate…blah blah blah</p>
                 
-                <p>To find out more our partner brands <a href="/FindOutMoreBrands">click here.</a></p>
+                <p>To find out more our partner brands click <a href="/FindOutMoreBrands">here.</a></p>
                 
-                <p>To find out more our partner charities <a href="/FindOutMoreCharities">click here.</a></p>
+                <p>To find out more our partner charities click <a href="/FindOutMoreCharities">here.</a></p>
+            </section>
             </section>
         </div>
     )
