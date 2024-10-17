@@ -7,6 +7,8 @@ import little_green_radicals_logo from "../../assets/little_green_radicals_logo.
 import piccalilly_logo from "../../assets/piccalilly_logo.png";
 import pigeon_logo from "../../assets/pigeon_logo.png";
 import toby_tiger_logo from "../../assets/toby_tiger_logo.png";
+import { LinkImages } from "../../components/LinkImages";
+import { Footer } from "../../components/Footer";
 
 export const FindOutMoreBrands = () => {
     return(
@@ -43,6 +45,8 @@ export const FindOutMoreBrands = () => {
                     </section>
                     </section>
             </section>
+            <LinkImages />
+            <Footer />
         </div>
     )
 }

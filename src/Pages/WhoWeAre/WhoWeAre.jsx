@@ -1,6 +1,8 @@
 import { NavBar } from "../../components/NavBar";
 import "./WhoWeAre.css"
 import Who_we_are_image from "../../assets/Who_we_are_photo.png"
+import { LinkImages } from "../../components/LinkImages";
+import { Footer } from "../../components/Footer";
 
 export const WhoWeAre = () => {
     return(
@@ -28,12 +30,10 @@ export const WhoWeAre = () => {
                     and to try and have a positive social impact wherever possible, was heavily influenced by her years at the Trusts.</p>
                 
                 <p>Image and paragraph: Kate…blah blah blah</p>
-                
-                <p>To find out more our partner brands click <a href="/FindOutMoreBrands">here.</a></p>
-                
-                <p>To find out more our partner charities click <a href="/FindOutMoreCharities">here.</a></p>
             </section>
             </section>
+            <LinkImages />
+            <Footer />
         </div>
     )
 }

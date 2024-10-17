@@ -1,3 +1,5 @@
+import { Footer } from "../../components/Footer";
+import { LinkImages } from "../../components/LinkImages";
 import { NavBar } from "../../components/NavBar";
 import "./Press.css"
 
@@ -10,6 +12,8 @@ export const Press = () => {
                     <p>Press</p>
                 </section>
             </section>
+            <LinkImages />
+            <Footer />
         </div>
     )
 }

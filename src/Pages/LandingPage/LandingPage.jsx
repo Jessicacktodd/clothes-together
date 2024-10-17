@@ -1,10 +1,10 @@
 import { NavBar } from "../../components/NavBar";
 
-import moock_photo from "../../assets/mock_photo.png"
-import mustard_link_image from "../../assets/mustard_link_image.png"
-import green_link_image from "../../assets/green_link_image.png"
-import orange_link_image from "../../assets/orange_link_image.png"
+import moock_photo from "../../assets/mock_photo.png";
+import { LinkImages } from "../../components/LinkImages";
 import "./LandingPage.css"
+// import { Footer } from "../../components/Footer";
+
 
 export const LandingPage = () => {
     return (
@@ -22,36 +22,10 @@ export const LandingPage = () => {
                     but rather that they are unable to access items that make everyday life (e.g school….social integration, leaving the house) possible’ (Heather Snowden, writing in British Vogue)<br></br>
                     <br></br>At a time when fashion brands are under increasing pressure to demonstrate greater sustainabilily, Clothes Together is linking clothing brands with charities to redirect spare stock to children living with clothing insecurity.</p>
                 </div>
-            
-            </section>
-            <section className="link-images">
-                <div className="link-item">
-                    <a href="/WhoWeAre">
-                        <img src={mustard_link_image} alt="mustard link image" className="mustard-link-image"></img>
-                    </a>
-                    <p className="link-description">Who We Are</p>
-                </div>
-                <div className="link-item">
-                    <a href="/FindOutMoreBrands">
-                        <img src={green_link_image} alt="green link image" className="green-link-image"></img>
-                    </a>
-                    <p className="link-description">Find Out More Brands</p>
-                 </div>
-                 <div className="link-item">
-                    <a href="/FindOutMoreCharities">
-                        <img src={orange_link_image} alt="orange link image" className="orange-link-image"></img>
-                    </a>
-                    <p className="link-description">Find Out More Charities</p>
-                </div>
-            </section>
-        <div>
-        <section className="Nile-blue-section-two">
-            <section className="misc-links">
-                <p>Contact Us</p>
-                <p>T&Cs</p>
-                <p>Legal</p>
-            </section>
         </section>
+        <LinkImages />
+        <div>
+        <Footer />
         </div>
         </div>
         </>
