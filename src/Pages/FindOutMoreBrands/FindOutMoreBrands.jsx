@@ -16,14 +16,14 @@ export const FindOutMoreBrands = () => {
             <NavBar />
             <section className="form"></section>
             <section className="Brands-blue-section">
-                <section className="partners">
                     <section className="brand-heading">
                         <p>Partner brands</p>
                     </section>
+                    <section className="partners">
                     <p>These brands are committed to ensuring that every piece of spare stock reaches people who need it</p>
                     <h4>Founding Partners</h4>
                     <section className="brand-logos">
-                        <div className="first-row">
+                        <div className="brands-first-row">
                             <a href="https://www.gooseberryfool.co.uk/">
                                 <img src={gooseberry_fool_logo} alt="gooseberry fool logo" className="gooseberry-fool-logo"></img></a>
                             <a href="https://www.iloclothing.co.uk/">
@@ -34,7 +34,7 @@ export const FindOutMoreBrands = () => {
                                 <img src={little_green_radicals_logo} alt="Little green radicals logo" className="little-green-radicals-logo"></img></a>
                         </div>
                         
-                        <div className="second-row">
+                        <div className="brands-second-row">
                             <a href="https://www.tobytiger.co.uk/">
                                 <img src={toby_tiger_logo} alt="Toby Tiger logo" className="toby-tiger-logo"></img></a>
                             <a href="https://www.piccalilly.co.uk/">

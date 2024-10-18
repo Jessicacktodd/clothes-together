@@ -4,14 +4,15 @@
     color: black;
     position: relative;
     width: 100%;
-    height: 50%;
+    min-height: 50vh;
     z-index: -1;
     display: flex;
+    flex-direction: column;
 }
 
 .brand-heading {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
     margin-top: 30px;
     color:  rgb(255, 125, 64);
@@ -19,15 +20,13 @@
 
 .partners p {
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .partners h4 {
     padding-left: 30px;
 }
 
-
-.first-row {
+.brands-first-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     grid-gap: 2rem;
@@ -37,8 +36,7 @@
 
 }
 
-
-.second-row {
+.brands-second-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-gap: 2rem;
@@ -58,32 +56,4 @@
     height: 100%;
     object-fit: contain; 
     display: block;
-}
-
-.gooseberry-fool-logo {
-    grid-column: 1 / 2;
-}
-
-.ILO-logo {
-    grid-column: 2 / 3;
-}
-
-.kite-logo {
-    grid-column: 3 / 4;
-}
-
-.little-green-radicals-logo {
-    grid-column: 4 / 5;
-}
-
-.toby-tiger-logo {
-    grid-column: 2 / 3;
-}
-
-.piccalilly-logo {
-    grid-column: 3 / 4;
-}
-
-.pigeon-logo {
-    grid-column: 4 / 5;
 }
