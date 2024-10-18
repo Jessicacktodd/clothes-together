@@ -12,10 +12,10 @@ export const NavBar = () => {
         <div id="navbar-div-container">
             <header className="header">
                 <div className="social-links">
-                    <a href="https://www.instagram.com/pigeonorganics/" target="_blank" rel="noopener mnoreferrer">
+                    <a href="https://www.instagram.com/pigeonorganics/" target="_blank" rel="noreferrer">
                         <img src={instagram_logo} alt="Instagram" className="social-icon" />
                     </a>
-                    <a href="https://www.facebook.com/pigeonorganics/" target="_blank" rel="noopener mnoreferrer">
+                    <a href="https://www.facebook.com/pigeonorganics/" target="_blank" rel="noreferrer">
                         <img src={facebook_logo} alt="Facebook" className="social-icon" />
                     </a>
                     <a href="mailto:info@pigeonorganics.com">
@@ -41,6 +41,7 @@ export const NavBar = () => {
                         <a href="/FindOutMoreBrands">PARTNER BRANDS</a>
                         <a href="/FindOutMoreCharities">PARTNER CHARITIES</a>
                         <a href="/Press">PRESS</a>
+                        <a href="/ContactUs">CONTACT US</a>
                 </nav>
             </div>
            

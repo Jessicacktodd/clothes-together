@@ -75,7 +75,7 @@ nav {
     max-width: 100%;
 }
 
-button {
+.right-side-links button {
     background-color: transparent;
     color: black;
     border: none;
@@ -85,10 +85,11 @@ button {
     transition: color 0.3s ease;
 }
 
-button:hover {
-    color: rgb(255, 125, 64)
+.right-side-links button:hover {
+    color: rgb(255, 125, 64);
+    background-color: transparent;
 }
 
-button:active {
+.right-side-links button:active {
     color: rgb(255, 125, 64); 
 }

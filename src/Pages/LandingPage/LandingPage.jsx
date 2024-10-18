@@ -6,6 +6,7 @@ import { LinkImages } from "../../components/LinkImages/LinkImages";
 import "./LandingPage.css"
 
 
+
 export const LandingPage = () => {
     return (
         <>
@@ -15,7 +16,7 @@ export const LandingPage = () => {
             <section className="quote">
                     <p>Reducing clothing waste....tackling clothing insecurity</p>
                 </section>
-                <img src={moock_photo} alt="mock photo" className="section-image"></img>
+                <img src={moock_photo} alt="mock" className="section-image"></img>
                 <div className="text-block">
                     <p>From the moment a baby is born, their life chances are largely determined by the postcode and the income of their parents. According to the Joseph Rowntree foundation, 30% of children in the UK live in poverty.<br></br>
                     <br></br>We believe that new clothes can make a real difference to children’s lives.  Clothing insecurity is little discussed but a huge problem in the UK.  ‘That doesn’t simply mean they are unable to afford garments they want, 

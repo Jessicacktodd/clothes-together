@@ -7,6 +7,8 @@ import { WhatWeDo } from "./Pages/WhatWeDo/WhatWeDo.jsx";
 import { FindOutMoreCharities } from "./Pages/FindOutMoreCharities/FindOutMoreCharities.jsx";
 import { FindOutMoreBrands } from "./Pages/FindOutMoreBrands/FindOutMoreBrands.jsx";
 import { Press } from "./Pages/Press/Press.jsx";
+import ContactUs from "./Pages/ContactUs/ContactUs.jsx";
+
 
 
 const router = createBrowserRouter([
@@ -40,7 +42,10 @@ const router = createBrowserRouter([
     element: <Press />
   },
 
-  
+  {
+    path: "/ContactUs",
+    element: <ContactUs />
+  },
 
 ]);
 
