@@ -16,5 +16,9 @@
     flex-direction: column;
     margin-left: 5%;
     font-size: 14px;
-    gap: 1px;
+    gap: 0px;
+}
+
+.misc-links p {
+    margin: 2px 0;
 }
