@@ -24,10 +24,10 @@ export const FindOutMoreBrands = () => {
                     <h4>Founding Partners</h4>
                     <section className="brand-logos">
                         <div className="brands-first-row">
-                            <a href="https://www.gooseberryfool.co.uk/">
-                                <img src={gooseberry_fool_logo} alt="gooseberry fool logo" className="gooseberry-fool-logo"></img></a>
-                            <a href="https://www.iloclothing.co.uk/">
-                                <img src={ILO_logo} alt="ILO logo" className="ILO-logo"></img></a>
+                            <a href="https://www.tobytiger.co.uk/">
+                                <img src={toby_tiger_logo} alt="Toby Tiger logo" className="toby-tiger-logo"></img></a>
+                            <a href="https://www.pigeonorganics.com/">
+                                <img src={pigeon_logo} alt="Pigeon logo" className="pigeon-logo"></img></a>
                             <a href="https://www.kite-clothing.co.uk/">
                                 <img src={kite_logo} alt="Kite logo" className="kite-logo"></img></a>
                             <a href="https://littlegreenradicals.com/">
@@ -35,12 +35,13 @@ export const FindOutMoreBrands = () => {
                         </div>
                         
                         <div className="brands-second-row">
-                            <a href="https://www.tobytiger.co.uk/">
-                                <img src={toby_tiger_logo} alt="Toby Tiger logo" className="toby-tiger-logo"></img></a>
+                            <a href="https://www.gooseberryfool.co.uk/">
+                                <img src={gooseberry_fool_logo} alt="gooseberry fool logo" className="gooseberry-fool-logo"></img></a>
                             <a href="https://www.piccalilly.co.uk/">
                                 <img src={piccalilly_logo} alt="Piccalilly logo" className="piccalilly-logo"></img></a>
-                            <a href="https://www.pigeonorganics.com/">
-                                <img src={pigeon_logo} alt="Pigeon logo" className="pigeon-logo"></img></a>
+                            <a href="https://www.iloclothing.co.uk/">
+                                <img src={ILO_logo} alt="ILO logo" className="ILO-logo"></img></a>
+                           
                         </div>
                     </section>
                     </section>
