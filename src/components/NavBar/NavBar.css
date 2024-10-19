@@ -93,3 +93,41 @@ nav {
 .right-side-links button:active {
     color: rgb(255, 125, 64); 
 }
+
+@media (max-width: 600px) {
+    #navbar-div-container nav {
+      justify-content: center;
+      padding: 10px 20px;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social-links {
+      margin-left: 0;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .clothes-together-logo {
+      width: 70%;
+    }
+  
+    .spread-out-links {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .spread-out-links a {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+  
+    .right-side-links button {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+  

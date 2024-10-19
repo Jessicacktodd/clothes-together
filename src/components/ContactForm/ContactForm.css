@@ -35,3 +35,20 @@ button:hover {
     background-color: rgb(255, 125, 64); 
     color: white;
 }
+
+@media (max-width: 600px) {
+  form {
+    width: 100%; 
+    padding: 15px 20px;
+  }
+
+  input, textarea {
+    font-size: 14px; 
+    padding: 8px;
+  }
+
+  .contact-form-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

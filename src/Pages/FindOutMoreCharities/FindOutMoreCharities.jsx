@@ -21,7 +21,7 @@ export const FindOutMoreCharities = () => {
                 <section className="charity-logos">
                         <div className="charities-first-row">
                             <a href="https://babybankalliance.org/">
-                                <img src={Baby_Bank_Alliance} alt="baby bank alliance" className="baby-bank-alliance" rel="noreferrer"></img></a>
+                                <img src={Baby_Bank_Alliance} alt="baby bank alliance" className="baby-bank-alliance"></img></a>
                             <a href="https://www.babybasicsmk.org.uk/">
                                 <img src={Baby_Basics_Milton_Keynes} alt="Baby Basics MK" className="baby-basics-milton-keynes"></img></a>
                             <a href="https://www.babybanknetwork.com/">
