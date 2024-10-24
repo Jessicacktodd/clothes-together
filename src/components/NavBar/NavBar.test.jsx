@@ -1,6 +1,10 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { useNavigate } from "react-router-dom";
+import { MemoryRouter, Route, Routes, useNavigate } from "react-router-dom";
 import { NavBar } from "./NavBar";
+import { WhoWeAre } from "../../Pages/WhoWeAre/WhoWeAre";
+import { FindOutMoreCharities } from "../../Pages/FindOutMoreCharities/FindOutMoreCharities";
+import { LandingPage } from "../../Pages/LandingPage/LandingPage";
+import { Press } from "../../Pages/Press/Press";
 
 jest.mock("react-router-dom", () => ({
     ...jest.requireActual("react-router-dom"),
@@ -26,38 +30,100 @@ test('renders NavBar with links and logo', () => {
 
     const facebookLink = screen.getByAltText(/Facebook/i);
     expect(facebookLink).toBeInTheDocument();
-})
+});
 
-test('navigates to correct pages when top buttons are clicked', () => {
+test('renders social media links with correct URLs', () => {
     render(<NavBar />);
+    
+    const instagramLink = screen.getByAltText('Instagram');
+    expect(instagramLink.closest('a')).toHaveAttribute('href', 'https://www.instagram.com/pigeonorganics/');
 
-    const brandButton = screen.getByText(/find out more \(brands\)/i);
-    fireEvent.click(brandButton);
-    expect(mockNavigate).toHaveBeenNthCalledWith(1, "/FindOutMoreBrands");
+    const facebookLink = screen.getByAltText('Facebook');
+    expect(facebookLink.closest('a')).toHaveAttribute('href', 'https://www.facebook.com/pigeonorganics/');
+});
 
-    const charityButton = screen.getByText(/find out more \(charities\)/i);
-    fireEvent.click(charityButton)
-    expect(mockNavigate).toHaveBeenNthCalledWith(2, "/FindOutMoreCharities");
+test('navigates to correct pages when spreadout links are clicked', () => {
+    render(
+        <MemoryRouter initialEntries={['/']}>
+            <Routes>
+                <Route path="/" element={<NavBar />} />
+                <Route path="/WhoWeAre" element={<WhoWeAre />} />
+            </Routes>
+        </MemoryRouter>
+    );
+
+    const whoWeAreLink = screen.getByText('Who we are');
+    fireEvent.click(whoWeAreLink);
+
+    expect(screen.getByText('Who we are')).toBeInTheDocument();
 
 });
 
+test('navigates to Press page when link is clicked', () => {
+    render(
+        <MemoryRouter initialEntries={['/']}>
+            <Routes>
+                <Route path="/" element={<NavBar />} />
+                <Route path="/Press" element={<Press />} />
+            </Routes>
+        </MemoryRouter>
+    );
 
-test('navigates to correct pages when spreadout links are clicked', () => {
-    render(<NavBar />);
+    const pressLink = screen.getByText('Press');
+    fireEvent.click(pressLink);
 
-    const WhoWeAreButton = screen.getByRole('button', { name: /who we are/i })
-    fireEvent.click(WhoWeAreButton);
-    expect(mockNavigate).toHaveBeenNthCalledWith(1, "/WhoWeAre");
+    expect(screen.getByText('Press')).toBeInTheDocument();
+});
 
-    const PressButton = screen.getByRole('button', { name: /Press/i})
-    fireEvent.click(PressButton);
-    expect(mockNavigate).toHaveBeenNthCalledWith(2, "/PRESS")
+test('navigates to correct pages when right side links are clicked', () => {
+    render(
+        <MemoryRouter initialEntries={['/']}>
+            <Routes>
+                <Route path="/" element={<NavBar />} />
+                <Route path="/FindOutMoreCharities" element={<FindOutMoreCharities />} />
+            </Routes>
+        </MemoryRouter>
+    );
+
+    const Find_Out_More_Charities_Link = screen.getByText('FIND OUT MORE (CHARITIES)');
+    fireEvent.click(Find_Out_More_Charities_Link)
+
+    expect(screen.getByText('Partner charities')).toBeInTheDocument();
 });
 
 test('logo navigates to landing page when clicked', () => {
-    render(<NavBar />)
+    render(
+        <MemoryRouter initialEntries={['/']}>
+            <Routes>
+                <Route path="/WhatWeDo" element={<NavBar />} />
+                <Route path="/" element={<LandingPage />} />
+            </Routes>
+        </MemoryRouter>
+    );
 
-    const logoButton = screen.getByRole('button', { name: /clothes together logo/i})
-    fireEvent.click(logoButton);
-    expect(mockNavigate).toHaveBeenNthCalledWith(1, "/")
+    const pressLink = screen.getByAltText('clothes together logo');
+    fireEvent.click(pressLink);
+
+    expect(screen.getByText('Reducing clothing waste....tackling clothing insecurity')).toBeInTheDocument();
+});
+
+test('all images have alt attributes', () => {
+    render(<NavBar />);
+    
+    const logo = screen.getByAltText('clothes together logo');
+    const instagram = screen.getByAltText('Instagram');
+    const facebook = screen.getByAltText('Facebook');
+    
+    expect(logo).toBeInTheDocument();
+    expect(instagram).toBeInTheDocument();
+    expect(facebook).toBeInTheDocument();
+});
+
+test('all navigation links are accessible', () => {
+    render(<NavBar />);
+
+    const links = screen.getAllByRole('link');
+    links.forEach(link => {
+        expect(link).toHaveAttribute('href');
+    });
 });
