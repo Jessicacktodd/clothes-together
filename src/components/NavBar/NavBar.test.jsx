@@ -101,8 +101,8 @@ test('logo navigates to landing page when clicked', () => {
         </MemoryRouter>
     );
 
-    const pressLink = screen.getByAltText('clothes together logo');
-    fireEvent.click(pressLink);
+    const logoLink = screen.getByAltText('clothes together logo');
+    fireEvent.click(logoLink);
 
     expect(screen.getByText('Reducing clothing waste....tackling clothing insecurity')).toBeInTheDocument();
 });

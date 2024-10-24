@@ -1,7 +1,8 @@
-import { fireEvent, render, screen } from "@testing-library/react";
-import { useNavigate } from "react-router-dom";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { MemoryRouter, Route, Routes, useNavigate } from "react-router-dom";
 import { LinkImages } from "./LinkImages";
 import userEvent from "@testing-library/user-event";
+import { WhoWeAre } from "../../Pages/WhoWeAre/WhoWeAre";
 
 jest.mock("react-router-dom", () => ({
     ...jest.requireActual("react-router-dom"),
@@ -17,7 +18,11 @@ beforeEach(() => {
 });
 
 test('test that the link images render correctly when page is loaded', () => {
-    render(<LinkImages />);
+    render(
+        <MemoryRouter>
+            <LinkImages />
+        </MemoryRouter>
+    );
 
     const mustard_link_image = screen.getByAltText(/mustard link/i);
     expect (mustard_link_image).toBeInTheDocument();
@@ -25,14 +30,22 @@ test('test that the link images render correctly when page is loaded', () => {
     const green_link_image = screen.getByAltText(/green link/i);
     expect (green_link_image).toBeInTheDocument();
 
-    const orange_link_image = screen.getByAltText(/green link/i);
+    const orange_link_image = screen.getByAltText(/orange link/i);
     expect (orange_link_image).toBeInTheDocument();
 })
 
-// test('make sure that link images links work', () => {
-//     render(<LinkImages />);
+test('make sure that link images links work',() => {
+    render(
+        <MemoryRouter initialEntries={['/']}>
+            <Routes>
+                <Route path="/" element={<LinkImages />} />
+                <Route path="/WhoWeAre" element={<WhoWeAre />} />
+            </Routes>
+        </MemoryRouter>
+    );
 
-//     // const mustard_link = screen.getAllByAltText(/mustard link/i);
-//     userEvent.click(screen.getByRole('link', {name: 'mustard_link_image'}))
-//     expect(screen.getByRole('p', {name: 'Who We Are'})).toBeInTheDocument()
-// })
+    const WhoWeAreLink = screen.getByAltText('mustard link');
+    fireEvent.click(WhoWeAreLink);
+
+    expect(screen.getByAltText('Kate garden')).toBeInTheDocument();
+});
