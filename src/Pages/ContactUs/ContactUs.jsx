@@ -5,7 +5,7 @@ import './ContactUs.css'
 import { Footer } from "../../components/CompanyInfoBanner/Footer";
 import { LinkImages } from "../../components/LinkImages/LinkImages";
 
-const ContactUs = () => {
+export const ContactUs = () => {
   return (
     <div className="contact-us-page">
         <NavBar />
@@ -21,4 +21,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+

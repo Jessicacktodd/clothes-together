@@ -25,23 +25,24 @@ export const NavBar = () => {
                 
                 <div className="right-side-links">
                     <nav>
-                        <button onClick={() => navigate("/FindOutMoreBrands")}>FIND OUR MORE (BRANDS)</button>
-                        <button onClick={() => navigate("/FindOutMoreCharities")}>FIND OUR MORE (CHARITIES)</button>
+                        <button onClick={() => navigate("/FindOutMoreBrands")}>FIND OUT MORE (BRANDS)</button>
+                        <button onClick={() => navigate("/FindOutMoreCharities")}>FIND OUT MORE (CHARITIES)</button>
                     </nav>
                 </div>
             </header>
            
             <div className="header-section">
-                <a href="/">
-                    <img src={clothes_together_logo} alt="clothes together logo" className="clothes-together-logo"></img></a>
+                <button className="logo-button" onClick={() => navigate("/")}>
+                    <img src={clothes_together_logo} alt="Clothes Together logo" className="clothes-together-logo" />
+                </button>
                 
                 <nav className="spread-out-links">
-                        <a href="/WhoWeAre">WHO WE ARE</a>
-                        <a href="/WhatWeDo">WHAT WE DO</a>
-                        <a href="/FindOutMoreBrands">PARTNER BRANDS</a>
-                        <a href="/FindOutMoreCharities">PARTNER CHARITIES</a>
-                        <a href="/Press">PRESS</a>
-                        <a href="/ContactUs">CONTACT US</a>
+                        <button onClick={() => navigate("/WhoWeAre")}>WHO WE ARE</button>
+                        <button onClick={() => navigate("/WhatWeDo")}>WHAT WE DO</button>
+                        <button onClick={() => navigate("/FindOutMoreBrands")}>PARTNER BRANDS</button>
+                        <button onClick={() => navigate("/FindOutMoreCharities")}>PARTNER CHARITIES</button>
+                        <button onClick={() => navigate("/PRESS")}>PRESS</button>
+                        <button onClick={() => navigate("/ContactUs")}>CONTACT US</button>
                 </nav>
             </div>
            

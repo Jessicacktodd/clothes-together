@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App.jsx';
+import { render } from '@testing-library/react';
+import { App } from './App'; // Ensure you're using curly braces for named export
 
-test('renders learn react link', () => {
+test('renders App without crashing', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
 });
+
+

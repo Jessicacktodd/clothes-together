@@ -1,5 +1,5 @@
 .Who-we-are-blue-section {
-    background-color: rgba(13, 166, 121, 0.4);
+    background-color: rgba(69, 181, 170, 0.5);
     padding: 20px 0;
     color: black;
     position: relative;
@@ -12,9 +12,10 @@
 
 .Who-we-are-heading {
     text-align: center;
-    font-size: 27px;
+    font-size: 28px;
     color: rgb(255, 125, 64);
-    margin: 15px auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .Who-we-are-image {

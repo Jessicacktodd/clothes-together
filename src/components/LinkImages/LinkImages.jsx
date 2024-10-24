@@ -8,19 +8,19 @@ export const LinkImages = () => {
             <section className="link-images">
                 <div className="link-item">
                     <a href="/WhoWeAre">
-                        <img src={mustard_link_image} alt="mustard link image" className="mustard-link-image"></img>
+                        <img src={mustard_link_image} alt="mustard link" className="mustard-link-image"></img>
                     </a>
                     <p className="link-description">Who We Are</p>
                 </div>
                 <div className="link-item">
                     <a href="/FindOutMoreBrands">
-                        <img src={green_link_image} alt="green link image" className="green-link-image"></img>
+                        <img src={green_link_image} alt="green link" className="green-link-image"></img>
                     </a>
                     <p className="link-description">Partner brands</p>
                 </div>
                 <div className="link-item">
                     <a href="/FindOutMoreCharities">
-                        <img src={orange_link_image} alt="orange link image" className="orange-link-image"></img>
+                        <img src={orange_link_image} alt="orange link" className="orange-link-image"></img>
                     </a>
                     <p className="link-description">Partner charities</p>
                 </div>
